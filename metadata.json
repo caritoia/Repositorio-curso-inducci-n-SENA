@@ -1,0 +1,6 @@
+{
+  "name": "Inducción SENA — Plataforma de Seguimiento y Normativa",
+  "description": "Prototipo interactivo para el seguimiento del proceso de inducción en el SENA, aprendizaje de la normativa del aprendiz, imagen institucional, contenido multimedia dinámico y cuestionarios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

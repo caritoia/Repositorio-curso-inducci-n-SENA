@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inducción SENA — Seguimiento, Normativa e Imagen Institucional</title>
+    <meta
+      name="description"
+      content="Prototipo interactivo para el seguimiento del proceso de inducción en el SENA, aprendizaje de la normativa del aprendiz, imagen institucional, contenido multimedia dinámico y cuestionarios."
+    />
+    <meta property="og:title" content="Inducción SENA — Seguimiento, Normativa e Imagen Institucional" />
+    <meta
+      property="og:description"
+      content="Plataforma interactiva de inducción SENA con seguimiento de aprendices, multimedia dinámico y cuestionarios de normativa e imagen institucional."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('sena_theme_mode');
+          if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F7F9F8] dark:bg-[#070D09] text-[#111C16] dark:text-[#E8F3ED] antialiased selection:bg-[#39A900]/20 selection:text-[#1B5200]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
